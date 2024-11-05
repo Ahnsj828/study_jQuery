@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>jQuery 문법을 HTML 파일 안에 직접 작성하는 경우</title>
+  </head>
+  <body>
+    <!-- 3. jQuery 문법을 HTML 파일 안에 직접 작성할 때 ⇒ </body> 전 -->
+    <!-- jQuery 문법 코드를 `<script>` 태그 안에 직접 작성할 경우, HTML 내에서의 올바른 위치 -->
+
+    <button id="btn">클릭</button>
+
+    <!-- jQuery 라이브러리 -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <!-- ✅ jQuery 문법은 jQuery 로딩 후에 작성 -->
+    <script>
+      $(document).ready(function () {
+        $("#btn").on("click", function () {
+          alert("버튼이 클릭되었습니다!");
+        });
+      });
+    </script>
+  </body>
+</html>
