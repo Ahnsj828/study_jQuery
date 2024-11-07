@@ -9,17 +9,14 @@
     <!-- 3. jQuery 문법을 HTML 파일 안에 직접 작성할 때 ⇒ </body> 전 -->
     <!-- jQuery 문법 코드를 `<script>` 태그 안에 직접 작성할 경우, HTML 내에서의 올바른 위치 -->
 
-    <button id="btn">클릭</button>
+    <!-- 콘텐츠 내용 -->
 
-    <!-- jQuery 라이브러리 -->
+    <!-- jQuery 라이브러리 먼저 -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-
-    <!-- ✅ jQuery 문법은 jQuery 로딩 후에 작성 -->
+    <!-- jQuery 문법(코드) -->
     <script>
-      $(document).ready(function () {
-        $("#btn").on("click", function () {
-          alert("버튼이 클릭되었습니다!");
-        });
+      $(function () {
+        // jQuery 코드 작성
       });
     </script>
   </body>
