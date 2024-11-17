@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>jQuery를 head에 위치하는 경우 - defer 사용</title>
+
+    <!-- ✅ jQuery를 head에 삽입하고 defer로 비동기 로드 -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" defer></script>
+
+    <!-- ✅ 사용자 정의 스크립트(jQuery 문법)는 jQuery보다 나중에, defer 사용 -->
+    <script src="./main.js" defer></script>
+  </head>
+  <body>
+    <h1>jQuery 테스트 페이지</h1>
+    <button id="btn">클릭</button>
+  </body>
+</html>
